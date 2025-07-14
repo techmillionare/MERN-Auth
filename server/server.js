@@ -15,7 +15,7 @@ connectDB();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: "http://localhost:3000",  // ✅ Replace with your frontend URL
+  origin: ['http://localhost:5173', 'https://mern-auth-tau-rosy.vercel.app'],  // ✅ Replace with your frontend URL
   credentials: true
 }));
 
